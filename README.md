@@ -13,11 +13,11 @@
 
 | 主界面 · 手机预览 | 右侧按键设置 | 真机悬浮层 |
 | --- | --- | --- |
-| ![主界面预览](screenshots/preview.png) | ![按键设置](screenshots/editor.png) | ![真机悬浮层](screenshots/overlay.png) |
+| ![主界面预览](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/preview.png) | ![按键设置](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/editor.png) | ![真机悬浮层](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/overlay.png) |
 
 | 模式菜单 | 图片识别自动切模式 | 自动跳过剧情 |
 | --- | --- | --- |
-| ![模式菜单](screenshots/mode-menu.png) | ![图片识别](screenshots/auto-mode.png) | ![跳过剧情](screenshots/story-skip.png) |
+| ![模式菜单](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/mode-menu.png) | ![图片识别](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/auto-mode.png) | ![跳过剧情](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/story-skip.png) |
 
 ---
 
@@ -125,7 +125,7 @@
 - **本地模式 / 串流模式**：标题栏右侧两个独立开关——两个都开时本地游戏和串流会话都显示虚拟界面；只开其中一个则仅对应环境显示。
 - **开机后台待命**：开启后写入 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` 后台启动项，登录 Windows 后程序静默驻留托盘，检测到游戏 / 串流会话自动加载悬浮层，可随时关闭。
 
-![启动卡片](screenshots/launch.png)
+![启动卡片](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/launch.png)
 
 ### 多游戏配置与分享
 
@@ -153,7 +153,7 @@
 - 点任意模式标签后，右侧设置区立即切换为该模式的按键。
 - 右上角「切换为竖屏 / 横屏」控制预览方向，保存到配置并在悬浮层沿用。
 
-![竖屏预览](screenshots/portrait.png)
+![竖屏预览](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/portrait.png)
 
 ### 手机预览框
 
@@ -206,7 +206,7 @@
 - **识别方式**：彩色 HSV 色块命中率 + 边缘梯度结构 NCC 双路融合，13 档等比缩放覆盖窗口与分辨率波动；设置锚点后只在锚点邻域搜索以提速。每个图片项目可独立配置：命中次数（1 ~ 5 次，默认 1 次，切换后巩固窗口内反向回切至少连续 2 次）、切换后冷却（默认 2000 ms，可配 0 ~ 10000 ms）、相似度阈值（默认 0.85）；扫描间隔取首个启用项目的设置（200 ~ 3000 ms，默认 400 ms）。
 - 识别只在游戏进程运行或检测到串流会话、且设置窗口不在屏幕前台时轮询。
 
-![图片识别](screenshots/auto-mode.png)
+![图片识别](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/auto-mode.png)
 
 ### 自动切换模式二 · 内存扫描
 
@@ -219,11 +219,11 @@
 - 命中后切换到「命中后切换到」选择的目标模式；开关控制当前内存项目是否启用，扫描间隔全局共用（50–1000 ms）；同一目标连续命中两次才切换，切换后 1.2 秒冷却。
 - 内存扫描在程序启动后即可开启，不要求先启动游戏，会持续等待配置路径中的游戏进程出现。
 
-![内存扫描](screenshots/memory-scan.png)
+![内存扫描](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/memory-scan.png)
 
 > **内存识别可能被游戏反作弊判定为违规，存在封号风险，请谨慎使用。**
 
-![内存识别免责声明](screenshots/memory-warning.png)
+![内存识别免责声明](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/memory-warning.png)
 
 游戏进程识别规则：同时识别「程序路径」对应的 exe 文件名与面板里手动填写的游戏进程名（多个用逗号、分号或空格分隔）；游戏已经在任务管理器运行、不是由本程序启动，也能被识别。游戏进程结束后默认自动退出本程序，可在托盘菜单关闭「游戏结束后自动退出」。
 
@@ -239,7 +239,7 @@
 - **顺序**：严格按 1 → 2 → 3 识别；**随机**：每次从尚未点击的目标中随机选一个识别。
 - 支持为剧情跳过绑定全局快捷键（默认 `F9`，仅支持键盘，与图片识别截图键 `F8` 区分）；通过快捷键或显示键菜单开启 / 关闭时，屏幕正中央会弹出汉字提示。
 
-![跳过剧情](screenshots/story-skip.png)
+![跳过剧情](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/story-skip.png)
 
 ### 右侧按键设置（短按 / 长按 / 双击）
 
@@ -254,7 +254,7 @@
 - **联动保持长按**：选择一个对象控件（摇杆或其他虚拟按键）；松开本键时如果对象控件仍在操作，本键继续保持按下，对象停止后自动松开。例：操控摇杆时按住 Shift，松开手指后 Shift 保持，摇杆停止后自动恢复。
 - **新增 / 删除按键**：每个模式独立管理，删除前二次确认。
 
-![按键设置](screenshots/editor.png)
+![按键设置](https://cdn.jsdelivr.net/gh/ganzhong2/MobileUI-Config@main/screenshots/editor.png)
 
 ### 虚拟手柄页
 
